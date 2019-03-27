@@ -1,0 +1,31 @@
+{% extends 'testapp/base.html' %}
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ {%block body_block%}
+<div class="'jumbotron">
+    <div class="container" align="center">
+        <h1> welcome to vebbler</h1>
+        <form method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <input type="submit" class="btn btn-lgbtn-primary" value="submit">
+
+
+        </form>
+
+
+    </div>
+
+</div>
+</div>
+ {%endblock%}
+</body>
+</html>

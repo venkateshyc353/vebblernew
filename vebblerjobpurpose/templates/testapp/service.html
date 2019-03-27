@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+ {%block body_block%}
+<div class="'jumbotron">
+    <div class="container" align="center">
+        <h1> my dear coustmers use VEBBLER services </h1>
+        <form method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <input type="submit" class="btn btn-lgbtn-primary" value="submit">
+
+
+        </form>
+    </div>
+</div>
+</div>
+ {%endblock%}
